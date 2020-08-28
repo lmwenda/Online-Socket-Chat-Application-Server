@@ -7,3 +7,7 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________
 
 The Main point of this project is to be able to understand Socket Servers and implement them into a GUI Application. I dont really care that the GUI looks ugly.
+______________________________________________________________________________________________________
+Usage:
+
+If your ever gonna copy this code make sure to remove the Folders in order for this to work.
