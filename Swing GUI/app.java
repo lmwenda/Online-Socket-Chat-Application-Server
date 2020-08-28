@@ -12,7 +12,7 @@ public class app {
         JPanel panel = new JPanel();
 
         // Frame Settings
-        frame.setSize(800, 600);
+        frame.setSize(717, 620);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel);
         panel.setLayout(null);
@@ -25,7 +25,7 @@ public class app {
 
         // Send Button
         send_text = new JButton("Send Text");
-        send_text.setBounds(10, 520, 100, 70);
+        send_text.setBounds(600, 520, 100, 70);
         panel.add(send_text);
 
         // Set Visibility
