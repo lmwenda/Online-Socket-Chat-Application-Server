@@ -11,3 +11,4 @@ ________________________________________________________________________________
 Usage:
 
 If your ever gonna copy this code make sure to remove the Folders in order for this to work.
+For the Swing UI make sure not put it on Full Screen or else it will look weird.
