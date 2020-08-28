@@ -1,13 +1,19 @@
 package com.company;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class app {
+public class app{
 
     private static JTextField message_box;
     private static JButton  send_text;
 
     public static void main(String[] args) {
+        chatapplication();
+    }
+
+    public static void chatapplication() {
         JFrame frame = new JFrame();
         JPanel panel = new JPanel();
 
@@ -18,6 +24,9 @@ public class app {
         panel.setLayout(null);
         System.out.println("Running Chat Application");
 
+        // Messages Displayed
+        // System.out.println(message);
+
         // Chat Box
         message_box = new JTextField();
         message_box.setBounds(0,520, 600, 70);
@@ -26,9 +35,17 @@ public class app {
         // Send Button
         send_text = new JButton("Send Text");
         send_text.setBounds(600, 520, 100, 70);
-        panel.add(send_text);
+        send_text.addActionListener(new ActionListener() {
+
+            public void actionPerformed(ActionEvent arg0) {
+                JOptionPane.showMessageDialog(frame.getComponent(0), message_box.getText());
+                send_text.setVisible(true);
+            }
+        });
+                panel.add(send_text);
 
         // Set Visibility
         frame.setVisible(true);
     }
 }
+
