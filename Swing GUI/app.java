@@ -39,6 +39,8 @@ public class app{
 
             public void actionPerformed(ActionEvent arg0) {
                 JOptionPane.showMessageDialog(frame.getComponent(0), message_box.getText());
+                JLabel message = new JLabel(message_box.getText());
+                message.setBounds(0, 200, 200, 100);
                 send_text.setVisible(true);
             }
         });
