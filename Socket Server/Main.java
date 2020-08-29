@@ -22,7 +22,11 @@ public class Main {
         // Debugging
         System.out.println("[SERVER] Connected to the Client");
 
-        // Closed Server
+        // new thread for a client
+        //thread = new EchoThread(socket).start();
+
+        // Closed Servers
+        // System.out.println("[SERVER] Disconnected from the client.");
         client.close();
         listener.close();
 

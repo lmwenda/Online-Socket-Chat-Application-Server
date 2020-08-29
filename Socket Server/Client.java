@@ -20,10 +20,13 @@ public class Client {
         System.out.println("[CLIENT] Looking for Server Connection."); // Debugging Purposes
 
         // Open the GUI Application
-        System.out.println("[CLIENT] Connected to the Server.");
-        app a = new app();
-        a.chatapplication();
+        System.out.println("[CLIENT] Connected to the Server from PORT 9090."); // Connected to the port and Debugging it
 
+        app a = new app(); // Declaring the Variable
+        a.chatapplication(); // Opening the Chat Application
 
+        if(socket.isClosed()){
+            System.out.println("[CLIENT] Disconnected from the Server.");
+        }
     }
 }
