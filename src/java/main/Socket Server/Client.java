@@ -25,6 +25,7 @@ public class Client {
 
         if(socket.isClosed()){
             System.out.println("[CLIENT] Disconnected from the Server.");
+            app.chatapplication().close()
         }
     }
 }
