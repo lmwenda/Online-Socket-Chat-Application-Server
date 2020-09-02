@@ -25,6 +25,10 @@ public class Main {
         //thread = new EchoThread(socket).start();
 
         // Closed Servers
+        if(listener == false) {
+           
+        System.out.println("[SERVER] Disconnected from the 
+        } 
         // System.out.println("[SERVER] Disconnected from the client.");
         client.close();
         listener.close();
